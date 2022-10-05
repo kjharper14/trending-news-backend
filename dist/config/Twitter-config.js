@@ -15,7 +15,7 @@ async function trends(endpoint, id) {
 
 function client(version) {
     const TwitterClient = twitterClientStrategies[version];
-    const client =  new TwitterClient({
+    const client = new TwitterClient({
         consumer_key: process.env.REACT_APP_TWITTER_CONSUMER_API_KEY,
         consumer_secret: process.env.REACT_APP_TWIITER_CONSUMER_API_SECRET_KEY,
         access_token_key: process.env.REACT_APP_TWITTER_API_KEY,
@@ -25,4 +25,4 @@ function client(version) {
     return client;
 }
 
-module.exports = {tweet,trends}
+module.exports = { tweet, trends }

@@ -7,7 +7,7 @@ router.post('/trends', (req, res) => {
     return res.send({
       headers: { 'Access-Control-Allow-Origin': '*' },
       statusCode: 200,
-      body: JSON.stringify(trends)
+      body: trends
     });
   }).catch((err) => {
     console.log(err);

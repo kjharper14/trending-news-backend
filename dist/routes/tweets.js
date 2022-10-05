@@ -7,7 +7,7 @@ router.post('/tweets', (req, res) => {
     return res.send({
       headers: { 'Access-Control-Allow-Origin': '*' },
       statusCode: 200,
-      body: JSON.stringify(tweet)
+      body: tweet
     });
   }).catch((err) => {
     console.log(err);

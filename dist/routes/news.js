@@ -4,10 +4,10 @@ let router = express.Router();
 
 router.post('/news', (req, res) => {
   getNewsRequest(req.body).then((news) => {
-    return res.json({
+    return res.send({
       headers: { 'Access-Control-Allow-Origin': '*' },
       statusCode: 200,
-      body: JSON.stringify(news)
+      body: news
     });
   }).catch((err) => console.log(err));
 })
