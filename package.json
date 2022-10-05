@@ -2,7 +2,7 @@
     "name": "trending-news-backend",
     "version": "1.0.0",
     "description": "Backend for Trending News",
-    "main": "server.js",
+    "main": "functions/server.js",
     "dependencies": {
         "axios": "^0.21.1",
         "body-parser": "^1.19.0",
@@ -15,8 +15,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server-local.js",
-        "build": "netlify-lambda build dist"
+        "build": "netlify-lambda build dist",
+        "start": "nodemon server-local.js"
     },
     "repository": {
         "type": "git",
