@@ -9,8 +9,9 @@ router.post('/tweets', (req, res) => {
       statusCode: 200,
       body: JSON.stringify(tweet)
     });
+  }).catch((err) => {
+    console.log(err);
   });
 })
 
 module.exports = router;
-
