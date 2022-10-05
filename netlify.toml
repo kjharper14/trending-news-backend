@@ -3,12 +3,11 @@
     functions = "functions"
 [functions]
     node_bundler = "esbuild"
-
 [[redirects]]
-      from = "/*"
-      to = "/.netlify/functions/server/*"
-      force = false
-      status = 200    
+    from = "/*"
+    to = "/.netlify/functions/server/*"
+    force = false
+    status = 200    
 [[headers]]
     for = "/*"
     [headers.values]
