@@ -4,7 +4,7 @@ let router = express.Router();
 
 router.post('/tweets', (req, res) => {
 
-  tweet('tweets', { 'ids': req.body }).then((tweet) => {
+  return tweet('tweets', { 'ids': req.body }).then((tweet) => {
     return res.json({
       headers: { 'Access-Control-Allow-Origin': '*' },
       statusCode: 200,

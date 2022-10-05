@@ -3,7 +3,6 @@ const trends = require('./routes/trends');
 const news = require('./routes/news');
 const express = require("express");
 const path = require('path');
-const PORT = process.env.PORT || 3001;
 var bodyParser = require('body-parser')
 const app = express();
 const serverless = require('serverless-http');
