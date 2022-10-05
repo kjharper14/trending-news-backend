@@ -2,7 +2,7 @@
     "name": "trending-news-backend",
     "version": "1.0.0",
     "description": "Backend for Trending News",
-    "main": "functions/server.js",
+    "main": "server.js",
     "dependencies": {
         "axios": "^0.21.1",
         "body-parser": "^1.19.0",
