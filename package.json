@@ -8,16 +8,16 @@
         "body-parser": "^1.19.0",
         "bootstrap": "^5.1.0",
         "dotenv": "^10.0.0",
-        "express": "^4.17.1",
+        "express": "^4.18.1",
+        "netlify-lambda": "^2.0.15",
+        "serverless-http": "^3.0.2",
         "twitter": "^1.7.1",
         "twitter-v2": "^1.1.0"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "build": "mkdir build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "start": "netlify-lambda serve src",
+        "build": "netlify-lambda build src"
     },
     "repository": {
         "type": "git",
@@ -30,6 +30,7 @@
     },
     "homepage": "https://github.com/kjharper14/trending-news-backend#readme",
     "devDependencies": {
+        "babel-cli": "^6.26.0",
         "gh-pages": "^4.0.0"
     }
 }
