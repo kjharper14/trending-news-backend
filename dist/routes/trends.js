@@ -3,8 +3,8 @@ let express = require('express');
 let router = express.Router();
 
 router.post('/trends', (req, res) => {
-  return trends('trends/place.json', req.body).then((trends) => {
-    return res.json({
+  trends('trends/place.json', req.body).then((trends) => {
+    return res.send({
       headers: { 'Access-Control-Allow-Origin': '*' },
       statusCode: 200,
       body: JSON.stringify(trends)
