@@ -7,7 +7,7 @@
     from = "/*"
     to = "/.netlify/functions/server/*"
     force = false
-    status = 200    
+    status = 200
 [[headers]]
     for = "/*"
     [headers.values]
