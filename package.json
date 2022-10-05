@@ -2,7 +2,7 @@
     "name": "trending-news-backend",
     "version": "1.0.0",
     "description": "Backend for Trending News",
-    "main": "server.js",
+    "main": "functions/server.js",
     "dependencies": {
         "axios": "^0.21.1",
         "body-parser": "^1.19.0",
@@ -17,7 +17,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "netlify-lambda serve src",
-        "build": "netlify-lambda build src"
+        "build": "netlify-lambda build"
     },
     "repository": {
         "type": "git",
@@ -31,6 +31,7 @@
     "homepage": "https://github.com/kjharper14/trending-news-backend#readme",
     "devDependencies": {
         "babel-cli": "^6.26.0",
-        "gh-pages": "^4.0.0"
+        "gh-pages": "^4.0.0",
+        "nodemon": "^2.0.20"
     }
 }
