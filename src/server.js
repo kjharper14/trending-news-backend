@@ -1,6 +1,6 @@
-const tweet = require('./src/routes/tweets');
-const trends = require('./src/routes/trends');
-const news = require('./src/routes/news');
+const tweet = require('./routes/tweets');
+const trends = require('./routes/trends');
+const news = require('./routes/news');
 const express = require("express");
 const path = require('path');
 const PORT = process.env.PORT || 3001;
